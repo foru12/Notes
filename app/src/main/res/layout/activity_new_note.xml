@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/bg_main_color"
+    android:layout_height="match_parent"
+    tools:context=".ui.NewNoteActivity">
+
+    <EditText
+        android:id="@+id/noteTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:textColor="@color/white"
+        android:padding="15dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_ed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/noteContent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Content"
+        android:padding="15dp"
+        android:textColor="@color/white"
+
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_ed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/noteTitle" />
+
+    <EditText
+        android:id="@+id/notePriority"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Priority"
+        android:padding="15dp"
+        android:textColor="@color/white"
+
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_ed"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/noteContent" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_marginTop="30dp"
+        app:backgroundTint="@null"
+        android:background="@drawable/bg_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/notePriority" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
